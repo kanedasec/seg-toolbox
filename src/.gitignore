@@ -1,0 +1,18 @@
+# Ignore Python cache directories
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore environment-specific and editor files
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Ignore results and artifacts
+results/
+!results/.gitignore
+
+# Ignore compiled bytecode in subdirectories
+**/__pycache__/
+**/*.py[cod]

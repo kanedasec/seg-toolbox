@@ -12,7 +12,7 @@ Toolbox CLI para executar testes de segurança modulares.
 
 2. Execute a partir da raiz do projeto:
     ```bash
-    python -m src.main
+    python src/main.py
 
 No menu, escolha o teste e preencha os inputs solicitados.
 
