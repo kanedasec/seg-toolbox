@@ -1,0 +1,6 @@
+# Ignore todos os arquivos dentro de results/
+*
+
+# Mas mantenha este próprio .gitignore
+!.gitignore
+!.keep
