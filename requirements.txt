@@ -1,62 +1,39 @@
-########################################################
-# 🧠 CORE DO PROJETO (CLI, logs, resultados, HTTP)
-########################################################
-typer==0.9.0                # Interface CLI (melhor que input() se quiser evoluir)
-rich==13.3.0                # Saídas coloridas / JSON bonitos no terminal
-requests==2.31.0            # Requisições HTTP base (para os testes)
-python-dateutil==2.9.0      # Manipulação de datas (para enriquecer relatórios)
-urllib3==2.2.2              # Camada HTTP subjacente (usada por requests)
-colorama==0.4.6             # Cores em terminais Windows (suporte adicional)
-tqdm==4.66.2                # Barras de progresso para loops e testes longos
-
-########################################################
-# 🧾 LOGGING E RELATÓRIOS
-########################################################
-pandas==2.2.3               # Caso queira converter resultados CSV/JSON em DataFrames
-openpyxl==3.1.5             # Exportar resultados para Excel
-jinja2==3.1.4               # Geração de relatórios HTML/PDF templated
-
-########################################################
-# 🔒 TESTES DE SEGURANÇA / AUTOMATION TOOLBOX
-########################################################
-# --- HTTP e Web ---
-httpx==0.27.0               # Alternativa moderna a requests (suporte async)
-aiohttp==3.10.10            # Cliente HTTP assíncrono (para testes simultâneos)
-beautifulsoup4==4.12.3      # Parsear HTML (XSS, form analysis)
-lxml==5.3.0                 # Parser rápido de HTML/XML (depende do SO)
-
-# --- Scanners / Fuzzing / Payloads ---
-fuzzywuzzy==0.18.0          # Comparação de strings (análise de resposta/fuzzing)
-python-Levenshtein==0.25.1  # Acelera fuzzywuzzy
-wordlistgen==1.1.1          # Gera wordlists automáticas (para fuzz)
-wfuzz==3.1.0                # Ferramenta de fuzzing HTTP (CLI ou scriptável)
-boofuzz==0.4.1              # Fuzzing de protocolos binários
-dirhunt==0.6.3              # Scanner de diretórios sensível a contexto
-requests-toolbelt==1.0.0    # Extensões úteis para requests (multipart, adapters)
-
-# --- Análise de segurança ---
-python-nmap==0.7.1          # Wrapper do nmap para scan de portas
-shodan==1.31.0              # Integração com API do Shodan
-paramiko==3.4.0             # SSH automation (para testes remotos controlados)
-pycryptodome==3.21.0        # Criptografia (hash, AES, RSA, etc.)
-jwt==1.3.1                  # Manipulação básica de JWT (decodificação / teste)
-cryptography==43.0.1        # Base para libs seguras (TLS, X.509, etc.)
-scapy==2.5.0                # Manipulação de pacotes de rede (sniffing e análise)
-validators==0.22.0          # Validação de URLs / inputs
-whois==0.9.32               # WHOIS lookup automatizado
-
-# --- Ferramentas de teste e automação ---
-selenium==4.25.0            # Testes de segurança com browsers reais
-playwright==1.46.0          # Automação de browser moderna (headless)
-mitmproxy==10.3.1           # Proxy interceptador (para inspeção e manipulação HTTP)
-socketio==0.0.0             # Placeholder para integrações real-time (se precisar)
-
-########################################################
-# 🧪 DEV / DEBUG / UTILITÁRIOS
-########################################################
-pytest==8.3.3               # Testes automatizados
-pytest-cov==5.1.0           # Cobertura de testes
-ipython==8.26.0             # REPL melhorado para debugging
-black==24.8.0               # Formatador de código
-isort==5.13.2               # Ordenador de imports
-mypy==1.13.0                # Tipagem estática opcional
+typer==0.9.0
+rich==13.3.0
+requests==2.31.0
+python-dateutil==2.9.0
+urllib3==2.2.2
+colorama==0.4.6
+tqdm==4.66.2
+pandas==2.2.3
+openpyxl==3.1.5
+jinja2==3.1.4
+httpx==0.27.0
+aiohttp==3.10.10
+beautifulsoup4==4.12.3
+lxml==5.3.0
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.25.1
+wordlistgen==1.1.1
+wfuzz==3.1.0
+boofuzz==0.4.1
+dirhunt==0.6.3
+requests-toolbelt==1.0.0
+python-nmap==0.7.1
+shodan==1.31.0
+paramiko==3.4.0
+pycryptodome==3.21.0
+pyjwt==2.8.0
+cryptography==43.0.1
+scapy==2.5.0
+validators==0.22.0
+python-whois==0.9.32
+selenium==4.25.0
+playwright==1.46.0
+mitmproxy==10.3.1
+pytest==8.3.3
+pytest-cov==5.1.0
+ipython==8.26.0
+black==24.8.0
+isort==5.13.2
+mypy==1.13.0
